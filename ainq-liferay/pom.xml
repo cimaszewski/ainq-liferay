@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.ainq.poc</groupId>
+	<artifactId>ainq-liferay</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+
+	<name>Ai SpringMVC Liferay Portlet Example</name>
+
+
+	<properties>
+		<liferay.auto.deploy.dir>/Users/chris/Development/tomcat/tomcat-SITE/deploy/</liferay.auto.deploy.dir>
+		<liferay.version>6.1.1</liferay.version>
+		<local.maven.repository>file:///Users/chris/Development/eclipseWorkspaces/site-maven-repo</local.maven.repository>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>maven-repository</id>
+			<url>${local.maven.repository}</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+	</dependencies>
+	<modules>
+		<module>ainq-liferay-sample-portlet</module>
+	</modules>
+</project>
